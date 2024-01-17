@@ -29,9 +29,9 @@
 ### File system (src/fs)
 
 The following functions are implemented in dedicated files:
-- `create.js` - implements a function that creates new file `fresh.txt` with the content `I am fresh and young` inside of the `files` folder (if the file already exists an `Error` with the message `FS operation failed` is thrown)
+- `create.js` - implements a function that creates a new file `fresh.txt` with the content `I am fresh and young` inside of the `files` folder (if the file already exists an `Error` with the message `FS operation failed` is thrown)
 - `copy.js` - implements a function that copies the folder `files` with all its content into the folder `files_copy` at the same level (if the `files` folder doesn't exist or the `files_copy` has already been created, an `Error` with the message `FS operation failed` is thrown)
-- `rename.js` - implements a function that renames the file `wrongFilename.txt` into `properFilename` with the extension `.md` (if there's no `wrongFilename.txt`file or the `properFilename.md` file already exists, an `Error` with the message `FS operation failed` is thrown)
+- `rename.js` - implements a function that renames the file `wrongFilename.txt` into `properFilename` with the extension `.md` (if there's no `wrongFilename.txt` file or the `properFilename.md` file already exists, an `Error` with the message `FS operation failed` is thrown)
 - `delete.js` - implements a function that deletes the file `fileToRemove.txt` (if there's no `fileToRemove.txt` file, an `Error` with the message `FS operation failed` is thrown)
 - `list.js` - implements a function that prints the entire array of the filenames from the `files` folder into the console (if the `files` folder doesn't exist, an `Error` with the message `FS operation failed` is thrown)
 - `read.js` - implements a function that prints the content of the `fileToRead.txt` file into the console (if there's no  `fileToRead.txt` file, an `Error` with the message `FS operation failed` is thrown)
