@@ -74,7 +74,7 @@ The following functions are implemented:
 
 The following functions are implemented:
 
-- `worker.js` - the provided function is extended to work with the data received from the main thread and implements a function which sends the result of the computation to the main thread
+- `worker.js` - the provided function is extended to work with the data received from the main thread and implements a function that sends the result of the computation to the main thread
 - `main.js` - implements a function that creates the number of the worker threads (equal to the number of the host machine logical CPU cores) from the file `worker.js` and can send data to those threads and receive the result of the computation from them. An incremental number starting from `10` is sent to each `worker`. For example: on the host machine with **4** cores **4** workers are created and **10** is sent to the first `worker`, **11** to the second `worker`, **12** to the third `worker`, **13** to the fourth `worker`. After all workers finish their operations, the function logs an array of the results into the console. The results are an array of objects with 2 properties:
     - `status` - `'resolved'` - if the value was successfully received from the  `worker` or `'error'` - if there is an error in the `worker`
     - `data` - the value from the `worker` in case of success or `null` in case of an error in the worker  
